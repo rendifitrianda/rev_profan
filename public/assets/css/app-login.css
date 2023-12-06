@@ -1,0 +1,101 @@
+@import url('./../plugins/bootstrap/css/bootstrap.css');
+
+:root {
+    --customPrimary: #696CFF !important;
+    --customPrimaryHover: #5f61e6 !important;
+    --customDanger: #ff3e1d !important;
+    --customDangerHover: #ec3b1b !important;
+    --customSuccess: #71dd37 !important;
+    --customSuccessHover: #62c72c !important;
+    --customWarning: #ffab00 !important;
+    --customWarningHover: #e79c05 !important;
+    --customInfo: #03b0d4 !important;
+    --customInfoHover: #03a1c0 !important;
+    --customSecondary: #788393 !important;
+    --customSecondaryHover: #687281 !important;
+    --customDark: #202f3f !important;
+    --customDarkHover: #1c2936 !important;
+}
+
+body {
+    font-family: 'Public Sans';
+    background-color: #f8fafc;
+
+}
+
+.login-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-box {
+    background-color: #FFFFFF;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.login-box .login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.login-box .login-header img:nth-child(1) {
+    width: 34px;
+}
+
+.login-box .login-header img:nth-child(2) {
+    width: 100px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.form-group .leading,
+.form-group .trailing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 36px;
+    height: 36px;
+}
+
+.form-group .leading i,
+.form-group .trailing i {
+    font-size: 16px;
+    color: #94a3b8;
+}
+
+.form-group .trailing {
+    right: 0;
+    cursor: pointer;
+}
+
+.form-control {
+    border: 2px solid #cbd5e1;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--customSecondary);
+    padding: 6px 36px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid #4f46e5;
+}
+
+.invalid-fedback {
+    font-size: 13px;
+}
